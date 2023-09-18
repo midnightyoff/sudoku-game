@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="windowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #222; -fx-background-radius: 28;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudokugame.MainWindowController">
+   <children>
+      <Pane fx:id="mainPane" layoutX="10.0" layoutY="24.0" prefHeight="570.0" prefWidth="780.0">
+         <children>
+            <Pane fx:id="menuPane" prefHeight="570.0" prefWidth="780.0" style="-fx-background-color: linear-gradient(to bottom right, #FF7F50, #6A5ACD); -fx-background-radius: 15 15 25 25;">
+               <children>
+                  <Button fx:id="buttonNewGame" layoutX="311.0" layoutY="200.0" mnemonicParsing="false" onAction="#startNewGame" prefHeight="60.0" prefWidth="158.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;" text="Новая игра">
+                     <font>
+                        <Font name="Roboto Light" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonRules" layoutX="311.0" layoutY="340.0" mnemonicParsing="false" onAction="#showRules" prefHeight="60.0" prefWidth="158.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;" text="Правила">
+                     <font>
+                        <Font name="Roboto Light" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonMediumLevel" disable="true" layoutX="347.0" layoutY="151.0" mnemonicParsing="false" onAction="#startMediumGame" opacity="0.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;" text="Средний">
+                     <font>
+                        <Font name="Roboto Light" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonEasyLevel" disable="true" layoutX="236.0" layoutY="151.0" mnemonicParsing="false" onAction="#startEasyGame" opacity="0.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;" text="Легкий">
+                     <font>
+                        <Font name="Roboto Light" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonHardLevel" disable="true" layoutX="469.0" layoutY="151.0" mnemonicParsing="false" onAction="#startHardGame" opacity="0.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;" text="Сложный">
+                     <font>
+                        <Font name="Roboto Light" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLoad" layoutX="311.0" layoutY="270.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="60.0" prefWidth="158.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;" text="Продолжить">
+                     <font>
+                        <Font name="Roboto Light" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="rulesText" layoutX="18.0" layoutY="406.0" prefHeight="150.0" prefWidth="757.0">
+                     <font>
+                        <Font name="Roboto Light" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sudokuLabel" layoutX="289.0" layoutY="14.0" prefHeight="124.0" prefWidth="203.0" text="Sudoku">
+                     <font>
+                        <Font name="Bauhaus 93" size="62.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="titlePane" prefHeight="25.0" prefWidth="800.0">
+         <children>
+            <ImageView fx:id="btnClose" fitHeight="16.0" fitWidth="16.0" layoutX="755.0" layoutY="5.0" onMouseClicked="#closeGame" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMinimize" fitHeight="16.0" fitWidth="16.0" layoutX="730.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hide.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="4.0" text="Sudoku" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
