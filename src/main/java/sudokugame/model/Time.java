@@ -1,4 +1,4 @@
-package sudokugame;
+package sudokugame.model;
 
 public class Time {
     private int second;

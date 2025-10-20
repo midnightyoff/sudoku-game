@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #222; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudokugame.ModalWindowController">
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #222; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudokugame.controller.ModalWindowController">
    <children>
       <Pane fx:id="titlePane" layoutY="4.0" onMouseDragged="#dragWindow" onMousePressed="#getCoordinates" prefHeight="18.0" prefWidth="300.0">
          <children>

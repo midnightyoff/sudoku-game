@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sudokugame.controller.MainWindowController;
 
 import java.io.IOException;
 

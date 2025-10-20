@@ -1,4 +1,4 @@
-package sudokugame;
+package sudokugame.controller;
 
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
@@ -26,8 +26,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import sudokugame.tile.Style;
-import sudokugame.tile.Tile;
+import sudokugame.model.Time;
+import sudokugame.model.tile.Style;
+import sudokugame.model.tile.Tile;
 
 import java.io.FileWriter;
 import java.io.IOException;

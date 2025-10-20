@@ -1,4 +1,4 @@
-package sudokugame.tile;
+package sudokugame.model.tile;
 
 public class Style {
     private final String[][] tileStyle = new String[9][9];

@@ -1,4 +1,4 @@
-package sudokugame;
+package sudokugame.model;
 
 import java.util.ArrayList;
 import java.util.Random;

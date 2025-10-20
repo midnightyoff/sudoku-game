@@ -1,4 +1,4 @@
-package sudokugame.tile;
+package sudokugame.model.tile;
 
 import javafx.scene.control.TextField;
 

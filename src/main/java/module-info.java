@@ -5,6 +5,10 @@ module com.example.sudokugame {
 
     opens sudokugame to javafx.fxml;
     exports sudokugame;
-    exports sudokugame.tile;
-    opens sudokugame.tile to javafx.fxml;
+    exports sudokugame.model.tile;
+    opens sudokugame.model.tile to javafx.fxml;
+    exports sudokugame.model;
+    opens sudokugame.model to javafx.fxml;
+    exports sudokugame.controller;
+    opens sudokugame.controller to javafx.fxml;
 }

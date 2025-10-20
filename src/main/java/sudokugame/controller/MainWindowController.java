@@ -1,4 +1,4 @@
-package sudokugame;
+package sudokugame.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import sudokugame.model.SudokuGenerator;
 
 import java.io.*;
 import java.util.Objects;
